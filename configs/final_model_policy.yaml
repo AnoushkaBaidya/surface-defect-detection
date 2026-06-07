@@ -1,0 +1,22 @@
+model_policy:
+  name: resnet18_efficientad_safety_gate
+  version: v1_internal_benchmark
+
+resnet18:
+  onnx_path: models/resnet18_internal.onnx
+  input_size: 224
+  raw_threshold: 0.002
+
+efficientad:
+  enabled: true
+  runtime: onnx
+  threshold: 0.30
+  onnx_path: models/efficientad_score.onnx
+  calibration_path: configs/efficientad_calibration.json
+  input_size: 224
+  note: EfficientAD is a calibrated high-confidence ONNX safety gate.
+
+api_limits:
+  max_upload_bytes: 10485760
+  min_image_dimension: 32
+  max_image_dimension: 4096

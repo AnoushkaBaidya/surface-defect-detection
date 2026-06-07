@@ -1,0 +1,10 @@
+{
+  "model_name": "efficientad_safety_gate",
+  "score_type": "minmax_normalization",
+  "raw_score_column": "efficientad_score_raw",
+  "raw_min": 0.1749078035354614,
+  "raw_max": 1.412938952445984,
+  "normalized_threshold": 0.3,
+  "formula": "normalized_score = (raw_score - raw_min) / (raw_max - raw_min)",
+  "source": "held-out calibration scores from the evaluation set"
+}

@@ -1,0 +1,15 @@
+MVTec AD
+   |
+   +--> profiling
+   |
+   +--> supervised baseline
+   |
+   +--> anomaly detection
+   |
+   +--> vision-language evaluation
+   |
+   +--> hybrid fusion
+   |
+   +--> aggregate comparison
+   |
+   +--> final model positioning

@@ -1,0 +1,82 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv-anomalyclip/
+
+# Environment secrets
+.env
+.env.local
+.env.*.local
+
+# Data and large artifacts
+data/raw/
+data/raw/mvtec_ad/
+data/interim/
+data/processed/
+data/synthetic/
+data/reports/
+data/internal/
+artifacts/models/
+artifacts/benchmarks/
+mlruns/
+archive/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.engine
+*.pkl
+*.joblib
+checkpoints/
+model_weights/
+cached_embeddings/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+# Terraform
+terraform/**/.terraform/
+terraform/**/*.tfstate
+terraform/**/*.tfstate.*
+terraform/**/.terraform.lock.hcl
+
+# Logs
+logs/
+*.log
+
+# Benchmark dumps
+artifacts/reports/**/raw/
+artifacts/reports/**/raw_metrics/
+artifacts/reports/**/raw_scores/
+artifacts/reports/**/*.json
+artifacts/reports/**/*.csv
+
+#Results
+results/
+
+#Anomaly-clip
+third_party/AnomalyCLIP/

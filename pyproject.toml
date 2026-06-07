@@ -1,0 +1,35 @@
+[project]
+name = "surface-defect-detection"
+version = "0.1.0"
+description = "MVTec AD surface-defect benchmark comparing supervised, anomaly, VLM, and hybrid approaches."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+authors = [
+    { name = "Anoushka Baidya" }
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra -q --basetemp=.pytest_tmp"
+
+[tool.ruff]
+line-length = 200
+target-version = "py311"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "B",
+    "UP",
+]
+ignore = []
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]

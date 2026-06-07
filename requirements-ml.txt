@@ -1,0 +1,9 @@
+-r requirements.txt
+
+# Deep learning
+torch
+torchvision
+
+# Training/reporting utilities
+tensorboard>=2.16,<3.0
+rich>=13.7,<14.0

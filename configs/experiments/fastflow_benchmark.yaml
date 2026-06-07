@@ -1,0 +1,74 @@
+experiment:
+  name: fastflow_mvtec_benchmark
+  description: FastFlow all-category Anomalib benchmark across all MVTec AD categories.
+
+dataset:
+  name: mvtec_ad
+  root_dir: data/raw/mvtec_ad
+  image_size: 256
+
+  categories:
+    - bottle
+    - cable
+    - capsule
+    - carpet
+    - grid
+    - hazelnut
+    - leather
+    - metal_nut
+    - pill
+    - screw
+    - tile
+    - toothbrush
+    - transistor
+    - wood
+    - zipper
+
+model:
+  family: anomalib
+  name: fastflow
+  training_mode: normal_only_trainable_density_model
+
+  # FastFlow uses a pretrained CNN backbone and normalizing flow blocks.
+  backbone: resnet18
+  pre_trained: true
+  flow_steps: 8
+  conv3x3_only: false
+  hidden_ratio: 1.0
+
+engine:
+  accelerator: auto
+  devices: 1
+  max_epochs: 50
+  num_workers: 0
+  train_batch_size: 8
+  eval_batch_size: 8
+
+early_stopping:
+  enabled: true
+  monitor: pixel_AUROC
+  mode: max
+  patience: 7
+  min_delta: 0.0001
+
+checkpointing:
+  enabled: true
+  monitor: pixel_AUROC
+  mode: max
+
+benchmark:
+  seed: 42
+  threshold_strategy: anomalib_default
+
+mlflow:
+  experiment_name: fastflow_mvtec_benchmark
+  tracking_uri: mlruns
+
+outputs:
+  base_model_dir: artifacts/models/benchmarks/fastflow
+  base_report_dir: artifacts/benchmarks/fastflow
+  raw_metrics_dir: artifacts/benchmarks/fastflow/raw_metrics
+  per_category_results_csv: artifacts/benchmarks/fastflow/per_category_results.csv
+  aggregate_results_csv: artifacts/benchmarks/fastflow/aggregate_results.csv
+  markdown_report: artifacts/benchmarks/fastflow/fastflow_benchmark_report.md
+

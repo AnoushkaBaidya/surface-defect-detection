@@ -1,0 +1,78 @@
+experiment:
+  name: resnet18_mvtec_benchmark
+  description: Category-specific ResNet18 supervised CNN baseline across all MVTec AD categories.
+
+dataset:
+  metadata_csv: data/reports/mvtec_image_metadata.csv
+  image_size: 224
+
+  categories:
+    - bottle
+    - cable
+    - capsule
+    - carpet
+    - grid
+    - hazelnut
+    - leather
+    - metal_nut
+    - pill
+    - screw
+    - tile
+    - toothbrush
+    - transistor
+    - wood
+    - zipper
+
+split:
+  random_seed: 42
+
+  # Simulates limited defect labels in real manufacturing.
+  # Defective images in MVTec are from test folders, so only a controlled
+  # fraction is borrowed for supervised CNN training.
+  defect_train_fraction: 0.25
+
+  # Use normal train/good pool. Keep this at 1.0 for ResNet18 benchmark so the CNN has
+  # access to all normal examples while still being constrained by defect scarcity.
+  normal_train_fraction: 1.0
+
+  # Small validation split carved from the CNN training split for early stopping.
+  validation_fraction: 0.20
+
+training:
+  model_name: resnet18
+  pretrained: true
+  batch_size: 16
+  max_epochs: 30
+  early_stopping_patience: 5
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  num_workers: 0
+  device: auto
+
+  # Industrial inspection prioritizes missed-defect reduction.
+  monitor_metric: recall
+
+  # If recall ties, choose the model with better F1.
+  tie_breaker_metric: f1
+
+scheduler:
+  enabled: true
+  type: reduce_lr_on_plateau
+  mode: max
+  factor: 0.5
+  patience: 2
+  min_lr: 0.000001
+
+mlflow:
+  experiment_name: resnet18_mvtec_benchmark
+  tracking_uri: mlruns
+
+outputs:
+  split_dir: data/processed/benchmarks/resnet18/splits
+  base_model_dir: artifacts/models/benchmarks/resnet18
+  base_report_dir: artifacts/benchmarks/resnet18
+  raw_metrics_dir: artifacts/benchmarks/resnet18/raw_metrics
+  per_category_results_csv: artifacts/benchmarks/resnet18/per_category_results.csv
+  aggregate_results_csv: artifacts/benchmarks/resnet18/aggregate_results.csv
+  markdown_report: artifacts/benchmarks/resnet18/resnet18_benchmark_report.md
+

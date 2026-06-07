@@ -1,0 +1,44 @@
+dataset:
+  name: mvtec_ad
+  display_name: MVTec Anomaly Detection Dataset
+  root_dir: data/raw/mvtec_ad
+  archive_path: data/raw/mvtec_anomaly_detection.tar.xz
+  official_page: https://www.mvtec.com/research-teaching/datasets/mvtec-ad
+
+  # The official public archive URL has historically been hosted through MVTec/mydrive.
+  # If this URL fails, manually download the archive from the official MVTec page
+  # and place it at data/raw/mvtec_anomaly_detection.tar.xz.
+  archive_url: https://www.mydrive.ch/shares/38536/3830184030e49fe74747669442f0f282/download/420938113-1629952094/mvtec_anomaly_detection.tar.xz
+
+  primary_category: bottle
+  optional_category: screw
+
+categories:
+  mvp:
+    - bottle
+  optional:
+    - screw
+  future:
+    - metal_nut
+    - tile
+    - leather
+    - capsule
+
+expected_structure:
+  category_dir: data/raw/mvtec_ad/<category>
+  train_good_dir: data/raw/mvtec_ad/<category>/train/good
+  test_dir: data/raw/mvtec_ad/<category>/test
+  ground_truth_dir: data/raw/mvtec_ad/<category>/ground_truth
+
+profiling:
+  image_extensions:
+    - .png
+    - .jpg
+    - .jpeg
+    - .bmp
+  sample_grid:
+    max_images: 12
+    thumbnail_size: 224
+  selected_categories:
+    - bottle
+    - screw

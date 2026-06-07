@@ -1,0 +1,67 @@
+experiment:
+  name: hybrid_score_fusion_benchmark
+  description: Hybrid score-fusion benchmark combining anomaly detection and VLM scores.
+
+dataset:
+  name: mvtec_ad
+  categories:
+    - bottle
+    - cable
+    - capsule
+    - carpet
+    - grid
+    - hazelnut
+    - leather
+    - metal_nut
+    - pill
+    - screw
+    - tile
+    - toothbrush
+    - transistor
+    - wood
+    - zipper
+
+inputs:
+  patchcore_scores_dir: artifacts/benchmarks/hybrid/raw_scores/patchcore
+  fastflow_scores_dir: artifacts/benchmarks/hybrid/raw_scores/fastflow
+  winclip_scores_dir: artifacts/benchmarks/hybrid/raw_scores/winclip
+
+fusion:
+  combinations:
+    - name: patchcore_winclip_k1
+      anomaly_model: patchcore
+      vlm_model: winclip
+      few_shot_k: 1
+    - name: patchcore_winclip_k4
+      anomaly_model: patchcore
+      vlm_model: winclip
+      few_shot_k: 4
+    - name: fastflow_winclip_k1
+      anomaly_model: fastflow
+      vlm_model: winclip
+      few_shot_k: 1
+    - name: fastflow_winclip_k4
+      anomaly_model: fastflow
+      vlm_model: winclip
+      few_shot_k: 4
+
+  weights:
+    - anomaly_weight: 0.7
+      vlm_weight: 0.3
+    - anomaly_weight: 0.5
+      vlm_weight: 0.5
+    - anomaly_weight: 0.3
+      vlm_weight: 0.7
+
+evaluation:
+  threshold_strategy: maximize_f1_diagnostic
+  note: Thresholded metrics are diagnostic. AUROC is threshold-independent.
+
+outputs:
+  base_report_dir: artifacts/benchmarks/hybrid
+  raw_scores_dir: artifacts/benchmarks/hybrid/raw_scores
+  raw_metrics_dir: artifacts/benchmarks/hybrid/raw_metrics
+  per_category_results_csv: artifacts/benchmarks/hybrid/per_category_results.csv
+  aggregate_results_csv: artifacts/benchmarks/hybrid/aggregate_results.csv
+  markdown_report: artifacts/benchmarks/hybrid/hybrid_benchmark_report.md
+

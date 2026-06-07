@@ -1,0 +1,27 @@
+experiment:
+  name: final_mvtec_model_selection
+  description: Final MVTec model selection report.
+
+inputs:
+  resnet18: artifacts/benchmarks/resnet18/per_category_results.csv
+  padim: artifacts/benchmarks/padim/per_category_results.csv
+  patchcore: artifacts/benchmarks/patchcore/per_category_results.csv
+  fastflow: artifacts/benchmarks/fastflow/per_category_results.csv
+  winclip: artifacts/benchmarks/winclip/per_category_results.csv
+  hybrid: artifacts/benchmarks/hybrid/per_category_results.csv
+
+selected_models:
+  supervised_baseline: resnet18
+  best_pure_anomaly_model: patchcore
+  production_feasible_model: fastflow
+  best_vlm_setting: winclip_k4
+  best_overall_model: patchcore_winclip_k4_aw0.7_vw0.3
+
+outputs:
+  report_dir: artifacts/benchmarks/model_selection
+  all_models_csv: artifacts/benchmarks/model_selection/all_models_per_category.csv
+  aggregate_csv: artifacts/benchmarks/model_selection/aggregate_model_comparison.csv
+  improvement_csv: artifacts/benchmarks/model_selection/improvement_analysis.csv
+  ranking_csv: artifacts/benchmarks/model_selection/final_model_ranking.csv
+  markdown_report: artifacts/benchmarks/model_selection/final_model_selection_report.md
+

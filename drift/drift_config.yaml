@@ -1,0 +1,32 @@
+baseline:
+  name: source_batch_baseline
+  normal_dir: data_samples/baseline_oct14/normal
+  defective_dir: data_samples/baseline_oct14/defective
+
+production:
+  name: heldout_batch_simulated_production
+  normal_dir: data_samples/production_nov8/normal
+  defective_dir: data_samples/production_nov8/defective
+
+features:
+  image_quality:
+    - brightness_mean
+    - contrast_std
+    - sharpness_laplacian_var
+
+thresholds:
+  brightness_relative_change_warning: 0.15
+  contrast_relative_change_warning: 0.15
+  sharpness_relative_change_warning: 0.20
+  defect_rate_absolute_change_warning: 0.10
+  ks_pvalue_warning: 0.05
+
+retraining_trigger:
+  min_drifted_features_for_warning: 2
+  min_total_images: 100
+
+outputs:
+  baseline_profile_json: artifacts/drift/source_baseline_profile.json
+  production_profile_json: artifacts/drift/heldout_production_profile.json
+  drift_report_json: artifacts/drift/drift_report.json
+  drift_report_md: artifacts/drift/drift_report.md

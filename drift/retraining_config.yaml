@@ -1,0 +1,17 @@
+inputs:
+  drift_report_json: artifacts/drift/drift_report.json
+  production_normal_dir: data_samples/production_nov8/normal
+  production_defective_dir: data_samples/production_nov8/defective
+
+outputs:
+  retraining_manifest_csv: artifacts/retraining/retraining_manifest.csv
+  retraining_trigger_json: artifacts/retraining/retraining_trigger.json
+
+selection:
+  max_normal_images: 300
+  max_defective_images: 300
+  include_all_if_small: true
+
+policy:
+  require_human_labels: true
+  simulated_labels_from_folder_names: true

@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+      - feature/**
+  pull_request:
+    branches:
+      - main
+      - staging
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install -r requirements-dev.txt
+          pip install anomalib
+
+      - name: Ruff lint
+        run: ruff check .
+
+      - name: Black formatting check
+        run: black --check .
+
+      - name: Repository validation
+        run: |
+          python scripts/validation/validate_repository_setup.py
+          python scripts/validation/validate_configs.py
+          python scripts/validation/validate_imports.py
+
+      - name: Pytest
+        run: pytest
+
+      - name: Dependency import smoke test
+        run: python -c "import defect_detection; import defect_detection.api.app; import defect_detection.runtime.predictor"

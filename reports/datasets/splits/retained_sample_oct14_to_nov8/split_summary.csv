@@ -1,0 +1,4 @@
+split,normal,defective,total
+train,240,120,360
+validation,60,30,90
+test,300,300,600

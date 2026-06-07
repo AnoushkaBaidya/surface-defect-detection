@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public Surface Defect Manifest Row",
+  "type": "object",
+  "required": [
+    "dataset_name",
+    "capture_batch",
+    "label",
+    "label_id",
+    "relative_path",
+    "is_private",
+    "is_simulated"
+  ],
+  "properties": {
+    "dataset_name": {
+      "type": "string",
+      "enum": ["baseline_oct14", "production_nov8"]
+    },
+    "capture_batch": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "enum": ["normal", "defective"]
+    },
+    "label_id": {
+      "type": "integer",
+      "enum": [0, 1]
+    },
+    "relative_path": {
+      "type": "string"
+    },
+    "is_private": {
+      "type": "boolean"
+    },
+    "is_simulated": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

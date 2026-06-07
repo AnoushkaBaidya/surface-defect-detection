@@ -1,0 +1,90 @@
+{
+  "retained_sample_pipeline": {
+    "dataset_contract": {
+      "path": "docs/DATASET_CONTRACT.md",
+      "exists": true,
+      "sha256": "cc7e78d480c06b4f4014a486fce47a957df5d784ca4a0f018a72c6fbaac15e34",
+      "size_bytes": 3084
+    },
+    "dataset_manifest_schema": {
+      "path": "configs/pipeline/retained_sample_manifest.schema.json",
+      "exists": true,
+      "sha256": "3c71db1ffd8cab8a060e043ac30a0b4f6fa5c354bd17cd85bfc1630b8c728e85",
+      "size_bytes": 807
+    },
+    "dataset_manifest_summary": {
+      "path": "reports/datasets/retained_sample_manifest_summary.json",
+      "exists": true,
+      "sha256": "d6fc15f0ca79e8f505d26ec30edc9629aaa2f01a8dc2cd77e5e97b67db50cb67",
+      "size_bytes": 283
+    },
+    "split_summary": {
+      "path": "reports/datasets/splits/retained_sample_oct14_to_nov8/split_summary.csv",
+      "exists": true,
+      "sha256": "110a123962812e9ca2c5c0c5b2399072f9545032d9c10175df9edd426164699e",
+      "size_bytes": 88
+    },
+    "prediction_csv": {
+      "path": "reports/predictions/retained_sample_resnet18_predictions.csv",
+      "exists": true,
+      "sha256": "779938dc654c784603be268cca5498a6f30cfa734b351ec53fa90ba068d0542c",
+      "size_bytes": 32003
+    },
+    "threshold_summary_json": {
+      "path": "reports/predictions/retained_sample_resnet18_threshold.json",
+      "exists": true,
+      "sha256": "dc65a6ef020b815f6b18c9b02ba64eac6c9bd131540793fe2a68c91dfe736da4",
+      "size_bytes": 652
+    },
+    "metrics_json": {
+      "path": "reports/reproducibility/retained_sample_resnet18_metrics.json",
+      "exists": true,
+      "sha256": "4ca0b1a6a02fe24ff37a69fe5ee9acd2002d3075531f6eb2558e549ed2a9b4e5",
+      "size_bytes": 1384
+    },
+    "score_monitoring_json": {
+      "path": "reports/reproducibility/retained_sample_resnet18_score_monitoring.json",
+      "exists": true,
+      "sha256": "491f16b601858b9a23a24075551e2d83f1eaf5e2aa3d3d415fbb58f2e85ecaab",
+      "size_bytes": 771
+    },
+    "markdown_summary": {
+      "path": "reports/reproducibility/retained_sample_resnet18_summary.md",
+      "exists": true,
+      "sha256": "d01e1bae771979158ed4851791eb7ac33a1ffc74a586208474e2bf483fccd670",
+      "size_bytes": 513
+    },
+    "model_artifact": {
+      "path": "models/resnet18_internal.onnx",
+      "exists": true,
+      "sha256": "33ac4e252394e69a580f9dd287faf93e1d15b165414eae3406a9f1ce79c5c865",
+      "size_bytes": 96995
+    }
+  },
+  "selected_policy": {
+    "service_config": {
+      "path": "configs/final_model_policy.yaml",
+      "exists": true,
+      "sha256": "18af0f53f1042bd476522eef5f0ba26c5804ebb421776031c777a4344560f794",
+      "size_bytes": 537
+    },
+    "resnet18_onnx": {
+      "path": "models/resnet18_internal.onnx",
+      "exists": true,
+      "sha256": "33ac4e252394e69a580f9dd287faf93e1d15b165414eae3406a9f1ce79c5c865",
+      "size_bytes": 96995
+    },
+    "efficientad_onnx": {
+      "path": "models/efficientad_score.onnx",
+      "exists": true,
+      "sha256": "fab2f56fa87ec67606be722b243a80377ddee832379eaeda572a93144e1db353",
+      "size_bytes": 32287875
+    },
+    "efficientad_calibration": {
+      "path": "configs/efficientad_calibration.json",
+      "exists": true,
+      "sha256": "6cf79928da2cabc9aa4dea837b16d1f6cdd4097e0c837b164fad277694dc9776",
+      "size_bytes": 378
+    }
+  }
+}

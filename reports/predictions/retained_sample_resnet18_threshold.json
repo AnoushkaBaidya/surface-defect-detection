@@ -1,0 +1,20 @@
+{
+  "selected_threshold": 0.003,
+  "selection_objective": "maximize_f1_subject_to_recall_floor",
+  "recall_floor": 0.95,
+  "selected_metrics": {
+    "threshold": 0.003,
+    "accuracy": 0.9383333333333334,
+    "precision": 0.9255663430420712,
+    "recall": 0.9533333333333334,
+    "f1": 0.9392446633825944,
+    "specificity": 0.9233333333333333,
+    "false_positive_rate": 0.07666666666666666,
+    "false_negative_rate": 0.04666666666666667,
+    "true_negative": 277,
+    "false_positive": 23,
+    "false_negative": 14,
+    "true_positive": 286
+  },
+  "prediction_csv": "reports/predictions/retained_sample_resnet18_predictions.csv"
+}

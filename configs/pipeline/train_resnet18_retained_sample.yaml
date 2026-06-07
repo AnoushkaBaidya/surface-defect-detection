@@ -1,0 +1,28 @@
+dataset:
+  manifest_csv: reports/datasets/retained_sample_manifest.csv
+
+split:
+  validation_fraction: 0.2
+  seed: 42
+
+model:
+  input_size: 224
+
+training:
+  seed: 42
+  device: cpu
+  batch_size: 16
+  num_workers: 0
+  epochs: 3
+  early_stopping_patience: 2
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+
+thresholding:
+  default_threshold: 0.5
+
+outputs:
+  split_dir: reports/datasets/splits/retained_sample_oct14_to_nov8
+  checkpoint_path: artifacts/retained_sample/models/resnet18_retained_sample.pt
+  training_history_json: artifacts/retained_sample/training/resnet18_retained_sample_history.json
+  training_summary_json: artifacts/retained_sample/training/resnet18_retained_sample_summary.json

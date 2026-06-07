@@ -1,0 +1,13 @@
+dataset_root: data_samples
+
+datasets:
+  - name: baseline_oct14
+    capture_batch: Oct14
+    is_simulated: false
+  - name: production_nov8
+    capture_batch: Nov8
+    is_simulated: false
+
+outputs:
+  manifest_csv: reports/datasets/retained_sample_manifest.csv
+  manifest_summary_json: reports/datasets/retained_sample_manifest_summary.json

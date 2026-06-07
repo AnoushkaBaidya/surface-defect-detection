@@ -1,0 +1,9 @@
+input:
+  checkpoint_path: artifacts/retained_sample/models/resnet18_retained_sample.pt
+
+model:
+  input_size: 224
+
+output:
+  onnx_path: artifacts/retained_sample/models/resnet18_retained_sample.onnx
+  lineage_json: artifacts/retained_sample/models/resnet18_retained_sample_onnx_lineage.json

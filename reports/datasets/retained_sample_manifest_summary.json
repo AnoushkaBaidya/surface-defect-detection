@@ -1,0 +1,16 @@
+{
+  "dataset_root": "data_samples",
+  "row_count": 1050,
+  "datasets": {
+    "baseline_oct14": {
+      "normal": 300,
+      "defective": 150,
+      "total": 450
+    },
+    "production_nov8": {
+      "normal": 300,
+      "defective": 300,
+      "total": 600
+    }
+  }
+}

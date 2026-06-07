@@ -1,0 +1,24 @@
+dataset:
+  manifest_csv: reports/datasets/retained_sample_manifest.csv
+  evaluation_split_csv: reports/datasets/splits/retained_sample_oct14_to_nov8/test.csv
+
+model:
+  artifact_path: models/resnet18_internal.onnx
+  input_size: 224
+  device: cpu
+
+thresholding:
+  default_threshold: 0.002
+  sweep_min: 0.001
+  sweep_max: 0.500
+  sweep_steps: 500
+  recall_floor: 0.95
+
+outputs:
+  prediction_csv: reports/predictions/retained_sample_resnet18_predictions.csv
+  threshold_summary_json: reports/predictions/retained_sample_resnet18_threshold.json
+  threshold_sweep_csv: reports/predictions/retained_sample_resnet18_threshold_sweep.csv
+  metrics_json: reports/reproducibility/retained_sample_resnet18_metrics.json
+  score_monitoring_json: reports/reproducibility/retained_sample_resnet18_score_monitoring.json
+  markdown_summary: reports/reproducibility/retained_sample_resnet18_summary.md
+  efficientad_calibration_copy_json: reports/reproducibility/retained_sample_efficientad_calibration.json

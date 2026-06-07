@@ -1,0 +1,36 @@
+{
+  "selected_policy_name": "resnet18_efficientad_safety_gate",
+  "selected_policy_version": "v1_internal_benchmark",
+  "resnet18": {
+    "onnx_path": "models/resnet18_internal.onnx",
+    "onnx_sha256": "33ac4e252394e69a580f9dd287faf93e1d15b165414eae3406a9f1ce79c5c865",
+    "onnx_external_data_path": "models/resnet18_internal.onnx.data",
+    "onnx_external_data_sha256": "97052eacb04da0b87889e239dd7e162b3b63fb3633db684fe3f5a991551ecf68",
+    "source_checkpoint": {
+      "status": "private_not_committed",
+      "reproducibility_surface": "scripts/train_resnet18.py and scripts/export_onnx.py"
+    },
+    "threshold_provenance": {
+      "selected_threshold": 0.002,
+      "selection_setting": "held-out Nov8 evaluation with recall-aware operating-point tuning",
+      "source_report": "reports/resnet18_failure_analysis.md"
+    }
+  },
+  "efficientad": {
+    "onnx_path": "models/efficientad_score.onnx",
+    "onnx_sha256": "fab2f56fa87ec67606be722b243a80377ddee832379eaeda572a93144e1db353",
+    "calibration_path": "configs/efficientad_calibration.json",
+    "calibration_sha256": "6cf79928da2cabc9aa4dea837b16d1f6cdd4097e0c837b164fad277694dc9776",
+    "threshold_provenance": {
+      "normalized_threshold": 0.30,
+      "selection_setting": "strict secondary safety gate, not standalone anomaly best-F1 threshold",
+      "source_report": "reports/final_hybrid_policy_report.md"
+    }
+  },
+  "retained_sample_reproducibility": {
+    "prediction_csv": "reports/predictions/retained_sample_resnet18_predictions.csv",
+    "threshold_summary_json": "reports/predictions/retained_sample_resnet18_threshold.json",
+    "metrics_json": "reports/reproducibility/retained_sample_resnet18_metrics.json",
+    "results_manifest": "reports/results_manifest.json"
+  }
+}

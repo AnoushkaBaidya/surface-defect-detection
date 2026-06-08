@@ -1,0 +1,35 @@
+{
+  "artifact_sources": {
+    "fp32_onnx": "benchmark_outputs\\models\\resnet18_bottle_fp32.onnx",
+    "int8_onnx": "benchmark_outputs\\models\\resnet18_bottle_int8.onnx",
+    "bottle_eval_split": "data/processed/phase3/resnet18/splits/bottle/eval.csv"
+  },
+  "hybrid_note": "The hybrid winner is a component-based serving policy. PatchCore and WinCLIP are not quantized in this pass; the INT8 benchmark covers the deployable ResNet-18 baseline only.",
+  "onnx_fp32": {
+    "model_size_mb": 42.629878997802734,
+    "mean_latency_ms": 34.23035441167432,
+    "p95_latency_ms": 45.560519999253295,
+    "throughput_images_per_second": 29.213837168421147,
+    "precision": 0.7058823529411765,
+    "recall": 1.0,
+    "f1": 0.8275862068965517,
+    "false_negative_rate": 0.0
+  },
+  "onnx_int8": {
+    "model_size_mb": 10.709988594055176,
+    "mean_latency_ms": 377.21766764704677,
+    "p95_latency_ms": 405.12239500048963,
+    "throughput_images_per_second": 2.65098929813562,
+    "precision": 0.7058823529411765,
+    "recall": 1.0,
+    "f1": 0.8275862068965517,
+    "false_negative_rate": 0.0
+  },
+  "deltas": {
+    "size_delta_mb": 31.91989040374756,
+    "size_reduction_pct": 74.87680273592332,
+    "mean_latency_delta_ms": 342.9873132353724,
+    "p95_latency_delta_ms": 359.56187500123633,
+    "f1_delta": 0.0
+  }
+}

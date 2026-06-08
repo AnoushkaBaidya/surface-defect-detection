@@ -1,0 +1,36 @@
+{
+  "artifact_sources": {
+    "resnet_checkpoint": "mlruns\\526830661020181409\\1e40f7369746481cac631eada887a24c\\artifacts\\best_model.pt",
+    "bottle_eval_split": "data/processed/phase3/resnet18/splits/bottle/eval.csv"
+  },
+  "exported_onnx_path": "benchmark_outputs\\models\\resnet18_bottle_fp32.onnx",
+  "pytorch_fp32": {
+    "model_size_mb": 42.71558666229248,
+    "mean_latency_ms": 73.13896764697562,
+    "p95_latency_ms": 85.39546499978314,
+    "throughput_images_per_second": 13.672602063878752,
+    "precision": 0.7058823529411765,
+    "recall": 1.0,
+    "f1": 0.8275862068965517,
+    "false_negative_rate": 0.0
+  },
+  "onnx_fp32": {
+    "model_size_mb": 42.629878997802734,
+    "mean_latency_ms": 31.668344117754124,
+    "p95_latency_ms": 39.06723000018246,
+    "throughput_images_per_second": 31.577274652619842,
+    "precision": 0.7058823529411765,
+    "recall": 1.0,
+    "f1": 0.8275862068965517,
+    "false_negative_rate": 0.0
+  },
+  "parity": {
+    "mean_defect_probability_delta": 0.0,
+    "max_defect_probability_delta": 0.0
+  },
+  "deltas": {
+    "f1_delta": 0.0,
+    "mean_latency_delta_ms": -41.47062352922149,
+    "p95_latency_delta_ms": -46.32823499960068
+  }
+}

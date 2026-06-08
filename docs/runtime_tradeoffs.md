@@ -28,6 +28,8 @@ This weighting is encoded in the benchmark summary pipeline and is intended to s
 - benchmark scripts measure inference latency and throughput where supported
 - MLflow captures runtime metrics alongside quality metrics
 - a minimal FastAPI runtime path is available for the ResNet18 classification path
+- bottle-category runtime optimization results now include raw artifact latency, ONNX FP32 export, and ONNX INT8 quantization for the ResNet18 deployment path
+- Ray Data is available as a separate preprocessing pipeline and does not change the benchmark latency numbers reported for single-image serving
 
 ## Remaining Gaps
 

@@ -8,7 +8,7 @@
 
 ## Measurement Limits
 
-- Hybrid latency was not captured under the same end-to-end runtime contract as the standalone models.
+- Hybrid latency in the runtime optimization report is derived from the sequential PatchCore + WinCLIP bottle-component timings rather than a single exported hybrid artifact.
 - WinCLIP measurements were collected in a CPU-local setup and should not be generalized to all hardware profiles.
 - Runtime and artifact comparisons are useful for relative positioning inside this repo, not as universal deployment claims.
 
@@ -16,6 +16,7 @@
 
 - The FastAPI runtime path is intentionally lightweight and currently supports the ResNet18 classification path only.
 - Anomaly-model serving is not yet implemented as a unified runtime interface.
+- ONNX export and INT8 quantization are implemented for the ResNet18 deployment path only; the hybrid winner remains a component-based serving policy.
 - CI and tests validate the repository core, not full GPU-dependent training workflows.
 
 ## Research Limits

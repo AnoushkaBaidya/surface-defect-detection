@@ -29,3 +29,7 @@
 ## Important Limitation
 
 Hybrid latency was not fully measured end-to-end, so this should be treated as the strongest benchmark result rather than a final runtime recommendation.
+
+## Final Policy
+
+This comparison constitutes an A/B evaluation of two serving policies on the same held-out test set, with F1, false-negative rate, and review load as the primary decision criteria.

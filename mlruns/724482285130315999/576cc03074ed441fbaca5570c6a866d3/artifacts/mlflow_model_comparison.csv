@@ -1,0 +1,7 @@
+run_name,model_name,model_family,selection_role,classification_auroc,classification_f1,precision,recall,false_negative_rate,throughput_images_per_second,inference_latency_ms_mean,model_size_mb,source_report,segmentation_auroc,segmentation_f1,false_negative_count
+resnet18_baseline,resnet18,cnn,supervised_baseline,0.8574,0.7499,0.9471,0.6905,0.3095,20.88,50.8,42.7,reports/resnet18_baseline_report.md,,,
+patchcore_quality_anchor,patchcore,anomaly_detection,best_pure_anomaly_model,0.9823,0.971,,0.9723,0.0277,,1193.8,781.2,reports/patchcore_benchmark_report.md,0.9801,0.5817,
+fastflow_runtime_tradeoff,fastflow,anomaly_detection,production_feasible_model,0.9336,0.9449,,0.9606,0.0394,2.05,502.7,268.7,reports/fastflow_benchmark_report.md,0.9715,0.5387,
+winclip_k1_recall_variant,winclip_k1,vlm,best_vlm_recall_variant,0.8976,0.9239,,0.9597,0.0403,,19553.3,,reports/winclip_evaluation_report.md,0.9057,0.3768,
+winclip_k4_quality_variant,winclip_k4,vlm,best_vlm_quality_variant,0.9249,0.9258,,0.9342,0.0658,,17231.8,,reports/winclip_evaluation_report.md,0.9121,0.3983,
+patchcore_winclip_k4_hybrid,patchcore_winclip_k4_aw0.7_vw0.3,hybrid,best_overall_model,0.9853,0.9773,0.9731,0.9823,0.0177,,,,reports/hybrid_model_report.md,,,1.53

@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_patchcore_grid_seed42",
+  "model_family": "anomalib",
+  "model_name": "patchcore",
+  "category": "grid",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9883041381835938,
+  "classification_f1": 0.9649122807017544,
+  "precision": 0.9649122807017544,
+  "recall": 0.9649122807017544,
+  "false_positive_rate": 0.09523809523809523,
+  "false_negative_rate": 0.03508771929824561,
+  "false_negative_count": 2,
+  "false_positive_count": 2,
+  "segmentation_auroc": 0.9822260141372681,
+  "segmentation_f1": 0.38747745752334595,
+  "segmentation_aupro": null,
+  "training_time_seconds": 1675.3555016,
+  "inference_latency_ms_mean": 1173.0972000000172,
+  "inference_latency_ms_p95": 1525.0263600000228,
+  "throughput_images_per_second": 0.8524442816844034,
+  "model_size_mb": 790.5529794692993,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\patchcore\\grid\\patchcore_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\patchcore\\raw_metrics",
+  "notes": "PatchCore normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9883041381835938,
+      "image_F1Score": 0.9649122953414917,
+      "pixel_AUROC": 0.9822260141372681,
+      "pixel_F1Score": 0.38747745752334595
+    }
+  ]
+}

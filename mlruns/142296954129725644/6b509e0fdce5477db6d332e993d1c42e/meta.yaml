@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/142296954129725644/6b509e0fdce5477db6d332e993d1c42e/artifacts
+end_time: 1778014300078
+entry_point_name: ''
+experiment_id: '142296954129725644'
+lifecycle_stage: active
+run_id: 6b509e0fdce5477db6d332e993d1c42e
+run_name: padim_benchmark_capsule
+run_uuid: 6b509e0fdce5477db6d332e993d1c42e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778014065747
+status: 3
+tags: []
+user_id: abaidya

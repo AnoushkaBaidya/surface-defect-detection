@@ -1,0 +1,39 @@
+{
+  "run_id": "vlm_winclip_toothbrush_k4_seed42",
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "toothbrush",
+  "seed": 42,
+  "training_mode": "few_shot",
+  "few_shot_k": 4,
+  "classification_auroc": 0.9305555820465088,
+  "classification_f1": 0.9032258064516129,
+  "precision": 0.875,
+  "recall": 0.9333333333333333,
+  "false_positive_rate": 0.3333333333333333,
+  "false_negative_rate": 0.06666666666666667,
+  "false_negative_count": 2,
+  "false_positive_count": 4,
+  "segmentation_auroc": 0.9498990178108215,
+  "segmentation_f1": 0.291801780462265,
+  "segmentation_aupro": null,
+  "training_time_seconds": 0.0,
+  "inference_latency_ms_mean": 17383.398542856976,
+  "inference_latency_ms_p95": 17383.398542856972,
+  "throughput_images_per_second": 0.05752615045525207,
+  "model_size_mb": 0.00030422210693359375,
+  "normal_train_fraction": null,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\winclip\\toothbrush\\k4\\toothbrush_k4_winclip_config.json",
+  "report_artifact_path": "artifacts\\benchmarks\\winclip\\raw_metrics\\k4",
+  "notes": "WinCLIP zero/few-shot VLM anomaly detection. Uses shared pretrained CLIP weights and category-specific prompt/reference configuration.",
+  "evaluation_time_seconds": 764.7455291000078,
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9305555820465088,
+      "image_F1Score": 0.9032257795333862,
+      "pixel_AUROC": 0.9498990178108215,
+      "pixel_F1Score": 0.291801780462265
+    }
+  ]
+}

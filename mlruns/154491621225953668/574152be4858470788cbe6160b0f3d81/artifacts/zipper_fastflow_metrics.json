@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_fastflow_zipper_seed42",
+  "model_family": "anomalib",
+  "model_name": "fastflow",
+  "category": "zipper",
+  "seed": 42,
+  "training_mode": "normal_only_trainable_density_model",
+  "few_shot_k": null,
+  "classification_auroc": 0.9698003530502319,
+  "classification_f1": 0.9672131147540983,
+  "precision": 0.944,
+  "recall": 0.9915966386554622,
+  "false_positive_rate": 0.21875,
+  "false_negative_rate": 0.008403361344537815,
+  "false_negative_count": 1,
+  "false_positive_count": 7,
+  "segmentation_auroc": 0.9790441989898682,
+  "segmentation_f1": 0.5446134805679321,
+  "segmentation_aupro": null,
+  "training_time_seconds": 3427.8475371999957,
+  "inference_latency_ms_mean": 430.3737132450016,
+  "inference_latency_ms_p95": 427.54230723681087,
+  "throughput_images_per_second": 2.3235619863026424,
+  "model_size_mb": 262.0885944366455,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\fastflow\\zipper\\fastflow_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\fastflow\\raw_metrics",
+  "notes": "FastFlow trainable normalizing-flow anomaly detection. Early stopping/checkpointing used when supported by installed Anomalib/Lightning version.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9698003530502319,
+      "image_F1Score": 0.9672130942344666,
+      "pixel_AUROC": 0.9790441989898682,
+      "pixel_F1Score": 0.5446134805679321
+    }
+  ]
+}

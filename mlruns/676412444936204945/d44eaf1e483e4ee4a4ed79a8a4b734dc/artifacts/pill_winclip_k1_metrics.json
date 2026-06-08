@@ -1,0 +1,39 @@
+{
+  "run_id": "vlm_winclip_pill_k1_seed42",
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "pill",
+  "seed": 42,
+  "training_mode": "few_shot",
+  "few_shot_k": 1,
+  "classification_auroc": 0.652482271194458,
+  "classification_f1": 0.9120521172638436,
+  "precision": 0.8433734939759037,
+  "recall": 0.9929078014184397,
+  "false_positive_rate": 1.0,
+  "false_negative_rate": 0.0070921985815602835,
+  "false_negative_count": 1,
+  "false_positive_count": 26,
+  "segmentation_auroc": 0.8741136193275452,
+  "segmentation_f1": 0.22465983033180237,
+  "segmentation_aupro": null,
+  "training_time_seconds": 0.0,
+  "inference_latency_ms_mean": 17319.58072634712,
+  "inference_latency_ms_p95": 17319.58072634712,
+  "throughput_images_per_second": 0.05773811824894622,
+  "model_size_mb": 0.00029277801513671875,
+  "normal_train_fraction": null,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\winclip\\pill\\k1\\pill_k1_winclip_config.json",
+  "report_artifact_path": "artifacts\\benchmarks\\winclip\\raw_metrics\\k1",
+  "notes": "WinCLIP zero/few-shot VLM anomaly detection. Uses shared pretrained CLIP weights and category-specific prompt/reference configuration.",
+  "evaluation_time_seconds": 2914.0732682999806,
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.652482271194458,
+      "image_F1Score": 0.9120520949363708,
+      "pixel_AUROC": 0.8741136193275452,
+      "pixel_F1Score": 0.22465983033180237
+    }
+  ]
+}

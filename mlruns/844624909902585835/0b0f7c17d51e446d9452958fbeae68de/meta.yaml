@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/844624909902585835/0b0f7c17d51e446d9452958fbeae68de/artifacts
+end_time: 1778038591513
+entry_point_name: ''
+experiment_id: '844624909902585835'
+lifecycle_stage: active
+run_id: 0b0f7c17d51e446d9452958fbeae68de
+run_name: patchcore_benchmark_metal_nut
+run_uuid: 0b0f7c17d51e446d9452958fbeae68de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778037154118
+status: 3
+tags: []
+user_id: abaidya

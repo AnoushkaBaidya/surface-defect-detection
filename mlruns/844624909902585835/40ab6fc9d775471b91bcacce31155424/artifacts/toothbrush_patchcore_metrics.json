@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_patchcore_toothbrush_seed42",
+  "model_family": "anomalib",
+  "model_name": "patchcore",
+  "category": "toothbrush",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9166666865348816,
+  "classification_f1": 0.9354838709677419,
+  "precision": 0.90625,
+  "recall": 0.9666666666666667,
+  "false_positive_rate": 0.25,
+  "false_negative_rate": 0.03333333333333333,
+  "false_negative_count": 1,
+  "false_positive_count": 3,
+  "segmentation_auroc": 0.9888371825218201,
+  "segmentation_f1": 0.5962638854980469,
+  "segmentation_aupro": null,
+  "training_time_seconds": 120.69438969999828,
+  "inference_latency_ms_mean": 751.9851071428136,
+  "inference_latency_ms_p95": 657.9869687499619,
+  "throughput_images_per_second": 1.329813570111149,
+  "model_size_mb": 407.2049512863159,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\patchcore\\toothbrush\\patchcore_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\patchcore\\raw_metrics",
+  "notes": "PatchCore normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9166666865348816,
+      "image_F1Score": 0.9354838728904724,
+      "pixel_AUROC": 0.9888371825218201,
+      "pixel_F1Score": 0.5962638854980469
+    }
+  ]
+}

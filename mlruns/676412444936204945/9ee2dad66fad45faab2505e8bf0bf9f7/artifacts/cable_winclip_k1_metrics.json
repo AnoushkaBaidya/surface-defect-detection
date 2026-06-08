@@ -1,0 +1,39 @@
+{
+  "run_id": "vlm_winclip_cable_k1_seed42",
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "cable",
+  "seed": 42,
+  "training_mode": "few_shot",
+  "few_shot_k": 1,
+  "classification_auroc": 0.8738755583763123,
+  "classification_f1": 0.8585858585858586,
+  "precision": 0.8018867924528302,
+  "recall": 0.9239130434782609,
+  "false_positive_rate": 0.3620689655172414,
+  "false_negative_rate": 0.07608695652173914,
+  "false_negative_count": 7,
+  "false_positive_count": 21,
+  "segmentation_auroc": 0.8170536756515503,
+  "segmentation_f1": 0.27302122116088867,
+  "segmentation_aupro": null,
+  "training_time_seconds": 0.0,
+  "inference_latency_ms_mean": 17677.189772666505,
+  "inference_latency_ms_p95": 17677.18977266651,
+  "throughput_images_per_second": 0.05657007775898054,
+  "model_size_mb": 0.00029468536376953125,
+  "normal_train_fraction": null,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\winclip\\cable\\k1\\cable_k1_winclip_config.json",
+  "report_artifact_path": "artifacts\\benchmarks\\winclip\\raw_metrics\\k1",
+  "notes": "WinCLIP zero/few-shot VLM anomaly detection. Uses shared pretrained CLIP weights and category-specific prompt/reference configuration.",
+  "evaluation_time_seconds": 2688.7226752999704,
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.8738755583763123,
+      "image_F1Score": 0.8585858345031738,
+      "pixel_AUROC": 0.8170536756515503,
+      "pixel_F1Score": 0.27302122116088867
+    }
+  ]
+}

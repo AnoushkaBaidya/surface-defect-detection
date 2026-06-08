@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/676412444936204945/1895d264f5e4426caad8cd761c7969ca/artifacts
+end_time: 1778322587730
+entry_point_name: ''
+experiment_id: '676412444936204945'
+lifecycle_stage: active
+run_id: 1895d264f5e4426caad8cd761c7969ca
+run_name: winclip_benchmark_wood_k0
+run_uuid: 1895d264f5e4426caad8cd761c7969ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778320238638
+status: 3
+tags: []
+user_id: abaidya

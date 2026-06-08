@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/154491621225953668/10bae3e0248c4ff2918cfd9c1a6755d2/artifacts
+end_time: 1778132344207
+entry_point_name: ''
+experiment_id: '154491621225953668'
+lifecycle_stage: active
+run_id: 10bae3e0248c4ff2918cfd9c1a6755d2
+run_name: fastflow_benchmark_toothbrush
+run_uuid: 10bae3e0248c4ff2918cfd9c1a6755d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778130208251
+status: 3
+tags: []
+user_id: abaidya

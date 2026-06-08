@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_patchcore_wood_seed42",
+  "model_family": "anomalib",
+  "model_name": "patchcore",
+  "category": "wood",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9868420958518982,
+  "classification_f1": 0.9586776859504132,
+  "precision": 0.9508196721311475,
+  "recall": 0.9666666666666667,
+  "false_positive_rate": 0.15789473684210525,
+  "false_negative_rate": 0.03333333333333333,
+  "false_negative_count": 2,
+  "false_positive_count": 3,
+  "segmentation_auroc": 0.9314424395561218,
+  "segmentation_f1": 0.47169986367225647,
+  "segmentation_aupro": null,
+  "training_time_seconds": 1502.8384664000005,
+  "inference_latency_ms_mean": 1266.3968316455444,
+  "inference_latency_ms_p95": 1429.2192814285436,
+  "throughput_images_per_second": 0.7896418997673966,
+  "model_size_mb": 762.92223072052,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\patchcore\\wood\\patchcore_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\patchcore\\raw_metrics",
+  "notes": "PatchCore normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9868420958518982,
+      "image_F1Score": 0.9586777091026306,
+      "pixel_AUROC": 0.9314424395561218,
+      "pixel_F1Score": 0.47169986367225647
+    }
+  ]
+}

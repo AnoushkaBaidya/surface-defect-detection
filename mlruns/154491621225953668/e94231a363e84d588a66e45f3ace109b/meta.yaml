@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/154491621225953668/e94231a363e84d588a66e45f3ace109b/artifacts
+end_time: 1778095546957
+entry_point_name: ''
+experiment_id: '154491621225953668'
+lifecycle_stage: active
+run_id: e94231a363e84d588a66e45f3ace109b
+run_name: fastflow_benchmark_carpet
+run_uuid: e94231a363e84d588a66e45f3ace109b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778092212039
+status: 3
+tags: []
+user_id: abaidya

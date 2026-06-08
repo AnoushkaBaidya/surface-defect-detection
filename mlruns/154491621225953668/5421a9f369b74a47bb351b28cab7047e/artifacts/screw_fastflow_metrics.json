@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_fastflow_screw_seed42",
+  "model_family": "anomalib",
+  "model_name": "fastflow",
+  "category": "screw",
+  "seed": 42,
+  "training_mode": "normal_only_trainable_density_model",
+  "few_shot_k": null,
+  "classification_auroc": 0.7169502377510071,
+  "classification_f1": 0.8692307692307693,
+  "precision": 0.8014184397163121,
+  "recall": 0.9495798319327731,
+  "false_positive_rate": 0.6829268292682927,
+  "false_negative_rate": 0.05042016806722689,
+  "false_negative_count": 6,
+  "false_positive_count": 28,
+  "segmentation_auroc": 0.9577123522758484,
+  "segmentation_f1": 0.20291385054588318,
+  "segmentation_aupro": null,
+  "training_time_seconds": 7144.580041699999,
+  "inference_latency_ms_mean": 445.6603331250335,
+  "inference_latency_ms_p95": 445.6603331250335,
+  "throughput_images_per_second": 2.243861357343289,
+  "model_size_mb": 259.2215518951416,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\fastflow\\screw\\fastflow_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\fastflow\\raw_metrics",
+  "notes": "FastFlow trainable normalizing-flow anomaly detection. Early stopping/checkpointing used when supported by installed Anomalib/Lightning version.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.7169502377510071,
+      "image_F1Score": 0.8692307472229004,
+      "pixel_AUROC": 0.9577123522758484,
+      "pixel_F1Score": 0.20291385054588318
+    }
+  ]
+}

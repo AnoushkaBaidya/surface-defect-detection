@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_fastflow_tile_seed42",
+  "model_family": "anomalib",
+  "model_name": "fastflow",
+  "category": "tile",
+  "seed": 42,
+  "training_mode": "normal_only_trainable_density_model",
+  "few_shot_k": null,
+  "classification_auroc": 0.9880952835083008,
+  "classification_f1": 0.9585798816568047,
+  "precision": 0.9529411764705882,
+  "recall": 0.9642857142857143,
+  "false_positive_rate": 0.12121212121212122,
+  "false_negative_rate": 0.03571428571428571,
+  "false_negative_count": 3,
+  "false_positive_count": 4,
+  "segmentation_auroc": 0.949504017829895,
+  "segmentation_f1": 0.6255355477333069,
+  "segmentation_aupro": null,
+  "training_time_seconds": 3309.875325400004,
+  "inference_latency_ms_mean": 512.6916401709617,
+  "inference_latency_ms_p95": 499.87434916668764,
+  "throughput_images_per_second": 1.950490161428302,
+  "model_size_mb": 275.2918891906738,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\fastflow\\tile\\fastflow_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\fastflow\\raw_metrics",
+  "notes": "FastFlow trainable normalizing-flow anomaly detection. Early stopping/checkpointing used when supported by installed Anomalib/Lightning version.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9880952835083008,
+      "image_F1Score": 0.9585798978805542,
+      "pixel_AUROC": 0.949504017829895,
+      "pixel_F1Score": 0.6255355477333069
+    }
+  ]
+}

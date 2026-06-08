@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_padim_capsule_seed42",
+  "model_family": "anomalib",
+  "model_name": "padim",
+  "category": "capsule",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.8986837267875671,
+  "classification_f1": 0.9473684210526315,
+  "precision": 0.907563025210084,
+  "recall": 0.9908256880733946,
+  "false_positive_rate": 0.4782608695652174,
+  "false_negative_rate": 0.009174311926605505,
+  "false_negative_count": 1,
+  "false_positive_count": 11,
+  "segmentation_auroc": 0.982638418674469,
+  "segmentation_f1": 0.43769371509552,
+  "segmentation_aupro": null,
+  "training_time_seconds": 101.15614189999178,
+  "inference_latency_ms_mean": 446.84723333303924,
+  "inference_latency_ms_p95": 433.70466764677343,
+  "throughput_images_per_second": 2.237901290203784,
+  "model_size_mb": 552.0675439834595,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\padim\\capsule\\padim_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\padim\\raw_metrics",
+  "notes": "PaDiM normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.8986837267875671,
+      "image_F1Score": 0.9473684430122375,
+      "pixel_AUROC": 0.982638418674469,
+      "pixel_F1Score": 0.43769371509552
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_padim_wood_seed42",
+  "model_family": "anomalib",
+  "model_name": "padim",
+  "category": "wood",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9666666388511658,
+  "classification_f1": 0.9344262295081968,
+  "precision": 0.9193548387096774,
+  "recall": 0.95,
+  "false_positive_rate": 0.2631578947368421,
+  "false_negative_rate": 0.05,
+  "false_negative_count": 3,
+  "false_positive_count": 5,
+  "segmentation_auroc": 0.9219767451286316,
+  "segmentation_f1": 0.4035150408744812,
+  "segmentation_aupro": null,
+  "training_time_seconds": 93.39037540007848,
+  "inference_latency_ms_mean": 496.21235696257,
+  "inference_latency_ms_p95": 560.0110885720434,
+  "throughput_images_per_second": 2.015266218119254,
+  "model_size_mb": 538.2755708694458,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\padim\\wood\\padim_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\padim\\raw_metrics",
+  "notes": "PaDiM normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9666666388511658,
+      "image_F1Score": 0.9344262480735779,
+      "pixel_AUROC": 0.9219767451286316,
+      "pixel_F1Score": 0.4035150408744812
+    }
+  ]
+}

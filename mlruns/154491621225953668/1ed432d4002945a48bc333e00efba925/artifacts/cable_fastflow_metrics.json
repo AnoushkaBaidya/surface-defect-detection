@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_fastflow_cable_seed42",
+  "model_family": "anomalib",
+  "model_name": "fastflow",
+  "category": "cable",
+  "seed": 42,
+  "training_mode": "normal_only_trainable_density_model",
+  "few_shot_k": null,
+  "classification_auroc": 0.9443402290344238,
+  "classification_f1": 0.9050279329608939,
+  "precision": 0.9310344827586207,
+  "recall": 0.8804347826086957,
+  "false_positive_rate": 0.10344827586206896,
+  "false_negative_rate": 0.11956521739130435,
+  "false_negative_count": 11,
+  "false_positive_count": 6,
+  "segmentation_auroc": 0.9678947925567627,
+  "segmentation_f1": 0.5520856380462646,
+  "segmentation_aupro": null,
+  "training_time_seconds": 9800.003017100003,
+  "inference_latency_ms_mean": 606.154271333362,
+  "inference_latency_ms_p95": 598.1785572368705,
+  "throughput_images_per_second": 1.6497450356990684,
+  "model_size_mb": 284.53774070739746,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\fastflow\\cable\\fastflow_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\fastflow\\raw_metrics",
+  "notes": "FastFlow trainable normalizing-flow anomaly detection. Early stopping/checkpointing used when supported by installed Anomalib/Lightning version.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9443402290344238,
+      "image_F1Score": 0.9050279259681702,
+      "pixel_AUROC": 0.9678947925567627,
+      "pixel_F1Score": 0.5520856380462646
+    }
+  ]
+}

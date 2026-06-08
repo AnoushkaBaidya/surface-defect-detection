@@ -1,0 +1,39 @@
+{
+  "run_id": "vlm_winclip_hazelnut_k4_seed42",
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "hazelnut",
+  "seed": 42,
+  "training_mode": "few_shot",
+  "few_shot_k": 4,
+  "classification_auroc": 0.9746428728103638,
+  "classification_f1": 0.9420289855072463,
+  "precision": 0.9558823529411765,
+  "recall": 0.9285714285714286,
+  "false_positive_rate": 0.075,
+  "false_negative_rate": 0.07142857142857142,
+  "false_negative_count": 5,
+  "false_positive_count": 3,
+  "segmentation_auroc": 0.9853066205978394,
+  "segmentation_f1": 0.6045526266098022,
+  "segmentation_aupro": null,
+  "training_time_seconds": 0.0,
+  "inference_latency_ms_mean": 17406.821781818602,
+  "inference_latency_ms_p95": 17406.821781818606,
+  "throughput_images_per_second": 0.05744874121963483,
+  "model_size_mb": 0.00030040740966796875,
+  "normal_train_fraction": null,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\winclip\\hazelnut\\k4\\hazelnut_k4_winclip_config.json",
+  "report_artifact_path": "artifacts\\benchmarks\\winclip\\raw_metrics\\k4",
+  "notes": "WinCLIP zero/few-shot VLM anomaly detection. Uses shared pretrained CLIP weights and category-specific prompt/reference configuration.",
+  "evaluation_time_seconds": 1949.028347400017,
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9746428728103638,
+      "image_F1Score": 0.9420289993286133,
+      "pixel_AUROC": 0.9853066205978394,
+      "pixel_F1Score": 0.6045526266098022
+    }
+  ]
+}

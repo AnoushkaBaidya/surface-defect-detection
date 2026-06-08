@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/526830661020181409
+creation_time: 1777998250312
+experiment_id: '526830661020181409'
+last_update_time: 1777998250312
+lifecycle_stage: active
+name: resnet18_mvtec_benchmark

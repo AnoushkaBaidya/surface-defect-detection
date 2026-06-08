@@ -1,0 +1,12 @@
+{
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "grid",
+  "class_name": "grid",
+  "k_shot": 4,
+  "scales": [
+    2,
+    3
+  ],
+  "note": "WinCLIP uses shared pretrained CLIP weights. This artifact records the category prompt and few-shot configuration, not trained weights."
+}

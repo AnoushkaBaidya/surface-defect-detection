@@ -1,0 +1,12 @@
+{
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "hazelnut",
+  "class_name": "hazelnut",
+  "k_shot": 1,
+  "scales": [
+    2,
+    3
+  ],
+  "note": "WinCLIP uses shared pretrained CLIP weights. This artifact records the category prompt and few-shot configuration, not trained weights."
+}

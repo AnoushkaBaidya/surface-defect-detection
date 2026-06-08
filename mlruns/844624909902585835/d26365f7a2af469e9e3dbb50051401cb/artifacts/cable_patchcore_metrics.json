@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_patchcore_cable_seed42",
+  "model_family": "anomalib",
+  "model_name": "patchcore",
+  "category": "cable",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9868815541267395,
+  "classification_f1": 0.9621621621621622,
+  "precision": 0.956989247311828,
+  "recall": 0.967391304347826,
+  "false_positive_rate": 0.06896551724137931,
+  "false_negative_rate": 0.03260869565217391,
+  "false_negative_count": 3,
+  "false_positive_count": 4,
+  "segmentation_auroc": 0.9850547909736633,
+  "segmentation_f1": 0.6401004195213318,
+  "segmentation_aupro": null,
+  "training_time_seconds": 1278.5106483999998,
+  "inference_latency_ms_mean": 1208.4399860000003,
+  "inference_latency_ms_p95": 1192.539459868421,
+  "throughput_images_per_second": 0.827513167046096,
+  "model_size_mb": 755.399790763855,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\patchcore\\cable\\patchcore_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\patchcore\\raw_metrics",
+  "notes": "PatchCore normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9868815541267395,
+      "image_F1Score": 0.9621621370315552,
+      "pixel_AUROC": 0.9850547909736633,
+      "pixel_F1Score": 0.6401004195213318
+    }
+  ]
+}

@@ -31,7 +31,6 @@ data/reports/
 data/internal/
 artifacts/models/
 artifacts/benchmarks/
-mlruns/
 archive/
 *.ckpt
 *.pt
@@ -77,6 +76,7 @@ artifacts/reports/**/*.csv
 
 #Results
 results/
+benchmark_outputs/models/
 
 #Anomaly-clip
 third_party/AnomalyCLIP/

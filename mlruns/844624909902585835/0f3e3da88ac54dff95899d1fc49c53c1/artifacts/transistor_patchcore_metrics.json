@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_patchcore_transistor_seed42",
+  "model_family": "anomalib",
+  "model_name": "patchcore",
+  "category": "transistor",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9937499761581421,
+  "classification_f1": 0.95,
+  "precision": 0.95,
+  "recall": 0.95,
+  "false_positive_rate": 0.03333333333333333,
+  "false_negative_rate": 0.05,
+  "false_negative_count": 2,
+  "false_positive_count": 2,
+  "segmentation_auroc": 0.9727758765220642,
+  "segmentation_f1": 0.6084527373313904,
+  "segmentation_aupro": null,
+  "training_time_seconds": 1155.6991084000001,
+  "inference_latency_ms_mean": 1196.8074269999847,
+  "inference_latency_ms_p95": 1150.7763721153704,
+  "throughput_images_per_second": 0.8355563121016731,
+  "model_size_mb": 704.3333692550659,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\patchcore\\transistor\\patchcore_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\patchcore\\raw_metrics",
+  "notes": "PatchCore normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9937499761581421,
+      "image_F1Score": 0.949999988079071,
+      "pixel_AUROC": 0.9727758765220642,
+      "pixel_F1Score": 0.6084527373313904
+    }
+  ]
+}

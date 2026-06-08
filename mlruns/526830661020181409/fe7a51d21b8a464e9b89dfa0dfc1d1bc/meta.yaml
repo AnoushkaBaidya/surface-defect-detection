@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/abaidya/Desktop/ML/surface-defect-detection/mlruns/526830661020181409/fe7a51d21b8a464e9b89dfa0dfc1d1bc/artifacts
+end_time: 1778006676020
+entry_point_name: ''
+experiment_id: '526830661020181409'
+lifecycle_stage: active
+run_id: fe7a51d21b8a464e9b89dfa0dfc1d1bc
+run_name: resnet18_benchmark_pill
+run_uuid: fe7a51d21b8a464e9b89dfa0dfc1d1bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778006006047
+status: 3
+tags: []
+user_id: abaidya

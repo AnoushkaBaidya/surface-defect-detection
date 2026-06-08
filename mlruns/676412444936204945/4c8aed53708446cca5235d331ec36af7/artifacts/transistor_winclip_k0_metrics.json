@@ -1,0 +1,39 @@
+{
+  "run_id": "vlm_winclip_transistor_k0_seed42",
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "transistor",
+  "seed": 42,
+  "training_mode": "zero_shot",
+  "few_shot_k": 0,
+  "classification_auroc": 0.8883333206176758,
+  "classification_f1": 0.7777777777777778,
+  "precision": 0.7,
+  "recall": 0.875,
+  "false_positive_rate": 0.25,
+  "false_negative_rate": 0.125,
+  "false_negative_count": 5,
+  "false_positive_count": 15,
+  "segmentation_auroc": 0.837742269039154,
+  "segmentation_f1": 0.2710183560848236,
+  "segmentation_aupro": null,
+  "training_time_seconds": 0.0,
+  "inference_latency_ms_mean": 14793.44535999989,
+  "inference_latency_ms_p95": 14793.445359999896,
+  "throughput_images_per_second": 0.06759750522375993,
+  "model_size_mb": 0.00030422210693359375,
+  "normal_train_fraction": null,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\winclip\\transistor\\k0\\transistor_k0_winclip_config.json",
+  "report_artifact_path": "artifacts\\benchmarks\\winclip\\raw_metrics\\k0",
+  "notes": "WinCLIP zero/few-shot VLM anomaly detection. Uses shared pretrained CLIP weights and category-specific prompt/reference configuration.",
+  "evaluation_time_seconds": 1499.0178844999755,
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.8883333206176758,
+      "image_F1Score": 0.7777777910232544,
+      "pixel_AUROC": 0.837742269039154,
+      "pixel_F1Score": 0.2710183560848236
+    }
+  ]
+}

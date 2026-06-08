@@ -1,0 +1,39 @@
+{
+  "run_id": "vlm_winclip_metal_nut_k4_seed42",
+  "model_family": "vlm",
+  "model_name": "winclip",
+  "category": "metal_nut",
+  "seed": 42,
+  "training_mode": "few_shot",
+  "few_shot_k": 4,
+  "classification_auroc": 0.9701857566833496,
+  "classification_f1": 0.956989247311828,
+  "precision": 0.956989247311828,
+  "recall": 0.956989247311828,
+  "false_positive_rate": 0.18181818181818182,
+  "false_negative_rate": 0.043010752688172046,
+  "false_negative_count": 4,
+  "false_positive_count": 4,
+  "segmentation_auroc": 0.6676726341247559,
+  "segmentation_f1": 0.29739564657211304,
+  "segmentation_aupro": null,
+  "training_time_seconds": 0.0,
+  "inference_latency_ms_mean": 16946.435363478347,
+  "inference_latency_ms_p95": 16946.43536347835,
+  "throughput_images_per_second": 0.059009460016300704,
+  "model_size_mb": 0.00030231475830078125,
+  "normal_train_fraction": null,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\winclip\\metal_nut\\k4\\metal_nut_k4_winclip_config.json",
+  "report_artifact_path": "artifacts\\benchmarks\\winclip\\raw_metrics\\k4",
+  "notes": "WinCLIP zero/few-shot VLM anomaly detection. Uses shared pretrained CLIP weights and category-specific prompt/reference configuration.",
+  "evaluation_time_seconds": 2004.2899494000012,
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9701857566833496,
+      "image_F1Score": 0.9569892287254333,
+      "pixel_AUROC": 0.6676726341247559,
+      "pixel_F1Score": 0.29739564657211304
+    }
+  ]
+}

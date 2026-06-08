@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_padim_leather_seed42",
+  "model_family": "anomalib",
+  "model_name": "padim",
+  "category": "leather",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9989809989929199,
+  "classification_f1": 0.9891304347826086,
+  "precision": 0.9891304347826086,
+  "recall": 0.9891304347826086,
+  "false_positive_rate": 0.03125,
+  "false_negative_rate": 0.010869565217391304,
+  "false_negative_count": 1,
+  "false_positive_count": 1,
+  "segmentation_auroc": 0.9868981838226318,
+  "segmentation_f1": 0.32470041513442993,
+  "segmentation_aupro": null,
+  "training_time_seconds": 111.6592018000083,
+  "inference_latency_ms_mean": 530.4585556450841,
+  "inference_latency_ms_p95": 513.8817257811752,
+  "throughput_images_per_second": 1.8851614124385503,
+  "model_size_mb": 565.5359983444214,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\padim\\leather\\padim_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\padim\\raw_metrics",
+  "notes": "PaDiM normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9989809989929199,
+      "image_F1Score": 0.989130437374115,
+      "pixel_AUROC": 0.9868981838226318,
+      "pixel_F1Score": 0.32470041513442993
+    }
+  ]
+}

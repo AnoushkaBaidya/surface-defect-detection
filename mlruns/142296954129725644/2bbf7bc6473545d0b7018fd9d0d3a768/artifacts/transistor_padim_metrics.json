@@ -1,0 +1,38 @@
+{
+  "run_id": "anomalib_padim_transistor_seed42",
+  "model_family": "anomalib",
+  "model_name": "padim",
+  "category": "transistor",
+  "seed": 42,
+  "training_mode": "normal_only",
+  "few_shot_k": null,
+  "classification_auroc": 0.9441666603088379,
+  "classification_f1": 0.8395061728395061,
+  "precision": 0.8292682926829268,
+  "recall": 0.85,
+  "false_positive_rate": 0.11666666666666667,
+  "false_negative_rate": 0.15,
+  "false_negative_count": 6,
+  "false_positive_count": 7,
+  "segmentation_auroc": 0.9757930040359497,
+  "segmentation_f1": 0.6583273410797119,
+  "segmentation_aupro": null,
+  "training_time_seconds": 95.02088940003887,
+  "inference_latency_ms_mean": 511.66632900014514,
+  "inference_latency_ms_p95": 491.98685480783195,
+  "throughput_images_per_second": 1.9543986839120622,
+  "model_size_mb": 539.821099281311,
+  "normal_train_fraction": 1.0,
+  "defect_train_fraction": 0.0,
+  "model_artifact_path": "artifacts\\models\\benchmarks\\padim\\transistor\\padim_model.ckpt",
+  "report_artifact_path": "artifacts\\benchmarks\\padim\\raw_metrics",
+  "notes": "PaDiM normal-only anomaly detection. Recall/FNR are extracted from Anomalib predictions when prediction labels are available.",
+  "raw_anomalib_test_results": [
+    {
+      "image_AUROC": 0.9441666603088379,
+      "image_F1Score": 0.8395061492919922,
+      "pixel_AUROC": 0.9757930040359497,
+      "pixel_F1Score": 0.6583273410797119
+    }
+  ]
+}

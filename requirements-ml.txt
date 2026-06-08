@@ -7,3 +7,6 @@ torchvision
 # Training/reporting utilities
 tensorboard>=2.16,<3.0
 rich>=13.7,<14.0
+
+# Distributed preprocessing
+ray[data]>=2.20,<3.0

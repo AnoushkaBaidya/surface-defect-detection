@@ -217,6 +217,3 @@ Then follow the setup instructions in that branch's `README.md`.
 
 ---
 
-## License
-
-MIT
